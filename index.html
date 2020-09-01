@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" >
+  <!--<meta http-equiv="Cache-Control" content="no-cache">--><!--手机页面通常在第一次加载后会进行缓存，然后每次刷新会使用缓存而不是去重新向服务器发送请求。如果不希望使用缓存可以设置no-cache。-->
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="description" content=" ">
+  <meta name="keywords" content="">
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+  <meta name="format-detection" content="telephone=no, email=no"><!--ios对数字的识别 安卓对邮箱的识别-->
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!--仅针对IOS的Safari顶端状态条的样式-->
+  <meta name="apple-mobile-web-app-capable" content="yes" /><!--可隐藏地址栏，仅针对IOS的Safari-->
+  <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+  <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+  <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+  <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+  <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+  <meta name="full-screen" content="yes"><!-- UC强制全屏 -->
+  <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+  <meta name="browsermode" content="application"><!-- UC应用模式 -->
+  <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+  <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+  <script type="text/javascript">
+    document.write("<scr"+"ipt src=\"./static/util/vue.min.js\"></sc"+"ript>")
+  </script>
+  <script type="text/javascript">
+    document.write("<scr"+"ipt src=\"./static/util/vue-router.min.js\"></sc"+"ript>")
+  </script>
+  <script type="text/javascript">
+    document.write("<scr"+"ipt src=\"./static/util/axios.min.js\"></sc"+"ript>")
+  </script>
+<!--  <script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue-router/2.7.0/vue-router.min.js"></script>
+  <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+  <script src="https://unpkg.com/element-ui@2.3.7/lib/index.js"></script>-->
+ <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui@2.3.7/lib/theme-chalk/index.css">-->
+  <title></title>
+</head>
+<body style="overflow-y: hidden;">
+<div id="app"></div><!--
+<script src="/dist/build.js"></script>-->
+<!--<script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.js"></script>-->
+<!--<script src="node_modules/vue-awesome-mui/mui/js/mui.init.js"></script>-->
+<!--<script src="./static/dll.vendor.js"></script>-->
+<script>
+  fnResize()
+  window.onresize = function () {
+    fnResize()
+  }
+  function fnResize() {
+    var deviceWidth = document.documentElement.clientWidth || window.innerWidth
+    if (deviceWidth >= 750) {
+      deviceWidth = 750
+    }
+    if (deviceWidth <= 320) {
+      deviceWidth = 320
+    }
+    document.documentElement.style.fontSize = (deviceWidth / 30.5) + 'px'
+  }
+  window.onload=function () {
+
+  }
+</script>
+</body>
+<style>
+  html,body{
+    height:100%;
+    overflow:hidden;
+  }
+</style>
+</html>

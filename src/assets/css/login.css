@@ -1,0 +1,117 @@
+.bg-login{
+  background-color: #fff;
+}
+.bg-login .login-title{
+  padding: 3.75rem 0 1rem;
+  justify-content: center;
+  display: flex;
+}
+.bg-login .text-center{
+  margin: 0 1.3rem 2.9rem;
+}
+.login-title .log-img img{
+  width:5rem;
+  border-radius: 5rem;
+}
+.bg-login .bd-bt,.findPsw .findPsw-ipt{
+  border-bottom: 1px solid #E5E5E5;
+  position: relative;
+  padding-bottom: 0.6666667rem;
+}
+.bd-bt .login-label{
+  padding: 0 2rem 0 0;
+  font-size: 1.333rem;
+}
+.login-tel{
+  border-bottom: 1px solid #FFFFFF;
+  width: 64%;
+}
+.login-btn{
+  position: relative;
+  border-radius: 0.4rem;
+}
+.bg-login .login-btn .bt-font{
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 3.83rem;
+  /*opacity: 0.7;*/
+}
+/*margin*/
+.mg-l{
+  margin-left: 0.916rem;
+}
+/*密码输入框中的icon*/
+.text-center .empty,.text-center .eyes{
+  width: 1.0833333rem;
+  position: absolute;
+}
+.text-center .empty{
+  bottom: 0.9rem;
+  right: 2.5rem;
+}
+.text-center .eyes{
+  bottom:1.1rem;
+  right:0;
+}
+.el-input__inner{
+  border:none;
+  border:0;
+}
+.img_seal{
+  width: 6.25rem;
+  position: absolute;
+  right: .5rem;
+  margin-top: 3rem;
+  z-index: 0;
+  text-align: left
+}
+.seal_div{
+  transform: rotate(-25deg);
+  margin-left: 22.5rem;
+  margin-top: 5rem;
+  width: 20%;
+}
+.magin_top15{
+  margin-top: -6.5rem;
+}
+.opacity_6{
+  color: grey;
+  opacity: .6;
+}
+.min_width4{
+  min-width: 4rem;
+}
+.errorImg{
+  width: 50%;
+  padding-top: 38%;
+  padding-left: 27%;
+}
+.mG-lft20{
+  margin-left: 20%;
+}
+/*在5下面重置label和btn之间的间距*/
+@media screen and (max-width:321px) {
+  .bg-login .login-title {
+    padding-top: 3rem !important;
+    /*padding-bottom:1px!important;*/
+  }
+  .bg-login #error_tel {
+    margin-top: 0.1rem !important;
+  }
+  .seal_div{
+    transform: rotate(-25deg);
+    margin-left: 18.5rem;
+    margin-top: 5rem;
+    width: 22%;
+  }
+}
+/*ipad Pro下面的樣式*/
+@media screen and (min-width:1024px){
+  .seal_div {
+    transform: rotate(-25deg);
+    margin-left: 33.5rem;
+    margin-top: 4.5rem;
+    width: 15%;
+  }
+}

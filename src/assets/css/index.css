@@ -1,0 +1,33 @@
+
+.mP-right{/**/
+  background: url("../../assets/img/right.png") no-repeat 100% 55%;
+  background-size: 0.583rem;
+  padding-right: 1.5rem;
+  width:75%;
+}
+.mP-right1{/*不带图标的*/
+  background-size: 0.583rem;
+  width:75%;
+}
+.mDetails-mask-image { /*图片全屏居中*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99999999;
+  background: #000;
+  overflow: auto;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.font-A9CFF8{
+  color: #A9CFF8;
+}
+.bd-btmF4{
+  border-bottom: 1px solid #F4F4F4;
+}
+.bd-btmddd{
+  border-bottom: 1px solid #DDDDDD;
+}

@@ -1,0 +1,82 @@
+.fillIn .fillIn-Adminis .upload {
+  position: relative;
+  width: 9.41666666667rem;
+  height: 8.3333333333rem;
+}/*图片展示*/
+.fillIn .fillIn-Adminis .upload .cha {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #cccccc;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.fillIn .fillIn-Adminis .upload .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 100%;
+  opacity: 0;
+  color: #ffffff;
+  border: none;
+}
+.fillIn .fillIn-Adminis .upload .del {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  border: none;
+}
+.fillIn .fillIn-Adminis .upload img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/*鼠标放上时显示删除和放大*/
+.Cause .Cause-conter .Cause-c-top .cha:hover .layer,
+.Cause .Cause-conter .Cause-c-top .cha:hover .del {
+  opacity: 1;
+}
+
+.fillIn .fillIn-Adminis .upload .load {
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+  width: 98%;
+  height: 98%;
+  border: 1px dashed #cccccc;
+}
+.fillIn .fillIn-Adminis .upload .load input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.fillIn .fillIn-Adminis .upload .preview{
+  width:100%;
+  height:100%;
+}
+.fillIn-conter .phone-mask .phone-Pupop input{
+  opacity:0;
+}
+/*5下面的样式*/
+@media screen and (max-width:321px){
+  .fillIn .fillIn-Adminis .upload {
+    position: relative;
+    width: 8.416667rem;
+    height: 7rem;
+  }
+}
